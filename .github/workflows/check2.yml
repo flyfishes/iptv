@@ -25,7 +25,7 @@ jobs:
       - name: install dependencies
         if: steps.files.outputs.any_changed == 'true'
         run: npm install
-      - name: validate
+      - name: validate and push
         if: steps.files.outputs.any_changed == 'false'
-        run: |
+        run: 
            curl https://iyuu.cn/IYUU19280Te2bb892e042846d10e07d6eca3a43a5aff248584.send?text=IPTV+CHANGED&desp=iptvchanged&u=u&p=p
