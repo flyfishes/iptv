@@ -16,7 +16,7 @@ jobs:
       - uses: tj-actions/changed-files@v35
         id: files
         with:
-          files: streams/*.m3u
+          files: streams/cn.m3u
       - uses: actions/setup-node@v3
         if: ${{ !env.ACT && steps.files.outputs.any_changed == 'true' }}
         with:
